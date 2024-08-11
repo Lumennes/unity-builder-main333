@@ -55,8 +55,8 @@ jobs:
           #- StandaloneWindows64 # Build a Windows 64-bit standalone with mono backend.
           # - StandaloneLinux64 # Build a Linux 64-bit standalone with mono/il2cpp backend.
           # - iOS # Build an iOS project.
-          - Android # Build an Android .apk.
-          #- WebGL # WebGL.
+          #- Android # Build an Android .apk.
+          - WebGL # WebGL.
         buildWithIl2cpp:
           - false
           - true

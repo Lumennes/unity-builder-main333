@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Packed Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Packed Assets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 593ea7c575eac004282534b730f8bdc7
+  m_SerializeEntries:
+  - m_GUID: 4093d12689b542940acf90706c34f9d2
+    m_Address: Tsuyu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 451d56867bbc92f40a33707a5904999c
+    m_Address: Zombie01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b76ceb720615c947ba0cb9ee56e1288
+    m_Address: Fumiko
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4bffede7cdec6fd449f1c7e7dc700646
+    m_Address: Emika
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ac8545c4a30f2b4d9bc84750bd12e1a
+    m_Address: Ai
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 646e365f3a4696f4a8f3765e79d7d88a
+    m_Address: Kazuko
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 673f017a030c7f54f9afbaa9be996dd5
+    m_Address: Rin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a8170c962532664a954da3e9d9cc115
+    m_Address: Hoshi
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cf47edee3f57c9448c0944da53b0d16
+    m_Address: Masa
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ed1cf0cb6b562247a20caa85ed5b6db
+    m_Address: Sakura
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9061b193e69158c438ed8247c5b12c4c
+    m_Address: Sensei
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a585a843acf3a20459a76a6c55e96c23
+    m_Address: Kaoru
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa5c23df37be9334988424e2f3a43bf0
+    m_Address: Aki
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6cbbfd3f7bbb10498c579c062628144
+    m_Address: Naoko
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c02715862cbf85045a9b8a2da0f17d9f
+    m_Address: Eri
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df1c07951d21cc345997de0b0f085222
+    m_Address: Hara
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb525e9e99fd28245b6c07e859fd274a
+    m_Address: Riko
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5ef505281f2a5af45a9e43e061ef3a0c, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 385596c0bb609aa49ab67a359f9e9b0d, type: 2}
+    - {fileID: 11400000, guid: 2050506f53773cc47a2a918a13eaefb8, type: 2}
