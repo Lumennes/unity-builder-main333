@@ -188,10 +188,17 @@ jobs:
       ###########################
       #          Upload         #
       ###########################
-      - uses: actions/upload-artifact@v4
+      # - uses: actions/upload-artifact@v4
+        # with:
+          # name:
+            # 'Build ${{ matrix.targetPlatform }} on Ubuntu (${{ matrix.unityVersion }}_il2cpp_${{ matrix.buildWithIl2cpp
+            # }}_params_${{ matrix.additionalParameters }})'
+          # path: build
+          # retention-days: 14
+          
+      - uses: Difegue/action-megacmd@master
         with:
-          name:
-            'Build ${{ matrix.targetPlatform }} on Ubuntu (${{ matrix.unityVersion }}_il2cpp_${{ matrix.buildWithIl2cpp
-            }}_params_${{ matrix.additionalParameters }})'
-          path: build
-          retention-days: 14
+          args: put -c build/${{ matrix.targetPlatform }} /Unity_projects/${{ matrix.projectName }}/${{ matrix.projectName }}_${{ matrix.unityVersion }}_${{ matrix.targetPlatform }}/
+        env:
+          USERNAME: ${{ secrets.MEGA_USERNAME }}
+          PASSWORD: ${{ secrets.MEGA_PASSWORD }}
