@@ -2,7 +2,7 @@ name: Builds - Ubuntu
 
 on:
   workflow_dispatch:
-  push:
+  #push:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
@@ -90,7 +90,12 @@ jobs:
           # No il2cpp dedicated server support on Linux Host
           - targetPlatform: StandaloneWindows64
             additionalParameters: -standaloneBuildSubtarget Server
-            buildWithIl2cpp: true    
+            buildWithIl2cpp: true
+
+    steps:
+      - name: Clear Space for Android Build
+        if: matrix.targetPlatform == 'Android'
+        uses: jlumbroso/free-disk-space@v1.3.1
 
       ###########################
       #         Checkout        #
