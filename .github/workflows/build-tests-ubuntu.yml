@@ -94,6 +94,10 @@ jobs:
 
     steps:      
 
+      - name: Clear Space for Android Build
+        if: matrix.targetPlatform == 'Android'
+        uses: jlumbroso/free-disk-space@v1.3.1
+
       ###########################
       #         Checkout        #
       ###########################
@@ -195,7 +199,12 @@ jobs:
           
       - uses: Difegue/action-megacmd@master
         with:
-          args: put -c build/${{ matrix.targetPlatform }} /Unity_projects/123/${{ matrix.unityVersion }}_${{ matrix.targetPlatform }}/
+          if: matrix.targetPlatform == 'Android'
+          args: put -c build /Android/
+          if: matrix.targetPlatform == 'StandaloneWindows64'
+          args: put -c build /StandaloneWindows64/
+          if: matrix.targetPlatform == 'WebGL'
+          args: put -c build /WebGL/
         env:
           USERNAME: ${{ secrets.MEGA_USERNAME }}
           PASSWORD: ${{ secrets.MEGA_PASSWORD }}
