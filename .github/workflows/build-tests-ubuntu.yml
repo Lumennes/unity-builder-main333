@@ -59,7 +59,7 @@ jobs:
           - WebGL # WebGL.
         buildWithIl2cpp:
           - false
-          # - true
+          - true
         additionalParameters:
           - -param value
           # - -standaloneBuildSubtarget Server
