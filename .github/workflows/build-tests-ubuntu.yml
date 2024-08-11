@@ -47,7 +47,7 @@ jobs:
         projectPath:
           - test-project
         unityVersion:
-          - 2022.3.41f1
+          - 2022.3.40f1
           # - 2022.3.13f1
           # - 2023.2.2f1
         targetPlatform:
@@ -189,17 +189,17 @@ jobs:
       ###########################
       #          Upload         #
       ###########################
-      # - uses: actions/upload-artifact@v4
-        # with:
-          # name:
-            # 'Build ${{ matrix.targetPlatform }} on Ubuntu (${{ matrix.unityVersion }}_il2cpp_${{ matrix.buildWithIl2cpp
-            # }}_params_${{ matrix.additionalParameters }})'
-          # path: build
-          # retention-days: 14
-          
-      - uses: Difegue/action-megacmd@master
+      - uses: actions/upload-artifact@v4
         with:
-          args: put -c build /Build/
-        env:
-          USERNAME: ${{ secrets.MEGA_USERNAME }}
-          PASSWORD: ${{ secrets.MEGA_PASSWORD }}
+          name:
+            'Build ${{ matrix.targetPlatform }} on Ubuntu (${{ matrix.unityVersion }}_il2cpp_${{ matrix.buildWithIl2cpp
+            }}_params_${{ matrix.additionalParameters }})'
+          path: build
+          retention-days: 14
+          
+      # - uses: Difegue/action-megacmd@master
+        # with:
+          # args: put -c build /Build/
+        # env:
+          # USERNAME: ${{ secrets.MEGA_USERNAME }}
+          # PASSWORD: ${{ secrets.MEGA_PASSWORD }}
