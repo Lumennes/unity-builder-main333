@@ -199,12 +199,7 @@ jobs:
           
       - uses: Difegue/action-megacmd@master
         with:
-          if: ${{ matrix.targetPlatform == 'Android' }}
-          args: put -c build /Android/
-          if: ${{ matrix.targetPlatform == 'StandaloneWindows64' }}
-          args: put -c build /StandaloneWindows64/
-          if: ${{ matrix.targetPlatform == 'WebGL' }}
-          args: put -c build /WebGL/
+          args: put -c build /Build/
         env:
           USERNAME: ${{ secrets.MEGA_USERNAME }}
           PASSWORD: ${{ secrets.MEGA_PASSWORD }}
