@@ -1,0 +1,280 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Duplicate Asset Isolation
+  m_EditorClassIdentifier: 
+  m_GroupName: Duplicate Asset Isolation
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5fbf7c7ad67cea045b014f3054b3dd79
+  m_SerializeEntries:
+  - m_GUID: 00b2b05a47a538b4fad24fa98d0626da
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Run_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 00eadbfec60097b4cb5d1f085d9d115c
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Fly_narmalB_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b44cc242ed3584429ee9ad734884f10
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Cry_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c58979598d9e70449513007ffdf7ef5
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Fly_idle_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11550f9bad7e5bb4984cc5e0b4dbaf1a
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@DieB_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1241a2e39bd9c4c4bb3ebceaaa9320c6
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Walk_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19249733975baca4281e15b9d9378d7d
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Damage_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19358b76335b4354e8b1796cffa89bdb
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Walk_L_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19d60c378ddef98468040d5f1ed1ce41
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@DieA_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b2fe44648e75a04d9482baeaeeab102
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@CastspellB_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2049144a9e1ecf24f94781a313be3331
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Angpose_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 247f62e07d5c43146be7cce6b0989366
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@RunA_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f04aaac7a589cc4fb45ac618f5736fa
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@IdleB_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34144a65fcabbed45a46e6f2f8344d8b
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Atk_A1_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 37348f20ad1c07f4caab59f66aebfe83
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@PoseA_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 37fd9435138dac445862edd8d65f7df3
+    m_Address: Assets/Suriyun/Emotions/Emo@Face_Ang3.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c03d3d696129c64a802442ffb66580e
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Atk4_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 494c028f93bfcc54aa17f020a746e3fb
+    m_Address: Assets/Suriyun/Emotions/Emo@Face_SmileB.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55aa89b19964b884688224d841415b6d
+    m_Address: Assets/Suriyun/Animations/Animation_check.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5612eb9697bdd0b45b4491bd1c8ab055
+    m_Address: Assets/Suriyun/Emotions/Emo@Face_Ang2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ca04f2157a653b40aabca872312c050
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Atk_A2_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6162bf53bbc7e2e468ad2c5ac28b5096
+    m_Address: Assets/Suriyun/Emotions/Emo@Face_Surprise.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 667bfbc373764174ba9425eccf70ca1f
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Atk1_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68463d6ad749c324b8077cb3289bb0a3
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Atk3_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6dc71edaf6280a44a88d9555c1444bad
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Bye_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f835138f0c76434182d28ce3a72d5ad
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@IdleF_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 743837cf5b4f7914592a903d075d7be6
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@IdleE_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78152b2b1869e604db65d36ef21da4f7
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@CastspellA_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ad977abbed926a4a83ea0e3c48bee6f
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Atk_A3_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d3611826aec2634c95afa9cda74de1d
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Walk_back_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8165efbea68cf804d9e64b430fbe0633
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Cutepose_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ed7d7862796f1f4da4ae2edd53f8128
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Run_R_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f353cad0bbfe154fb9d9f8699b4efaf
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@RunA_L_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91da50dc913da674880a26a5f595290d
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Fly_narmalA_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 932e0f35efeef4d4bbb3f8eb14e03086
+    m_Address: Assets/Suriyun/Emotions/Emo@Face_SadA.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 98c81f928283ec541ab10126616891a8
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Fly_speedup_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3915ce301067ee46aea0c1d70bb32cc
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Idle_A_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7258b5020bfd39429e9abcf499290c9
+    m_Address: Assets/Suriyun/Emotions/Emo@Face_Ang1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9b647a73aef2fb4a83c157be5e4867c
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@CastspellC_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bbf310eb8fb96874bbf27fc8a5ad4eda
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Atk2_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be891319084e9d147b09d89e80ce60e0
+    m_Address: Packages/com.unity.toonshader/Runtime/Integrated/Shaders/UnityToon.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c02396a3097d98440b00cedd45f5f9d7
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@IdleG_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c1ce7d32270a3f14b8e951ca7c632542
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@RunA_R_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cae0d3adde235d0468c462acb1520ea3
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Jump_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d8fc6b8796eb47f499efc7682b0f0c0a
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Rei_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfc49e53333260d48a83878e7deceb91
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Run_L_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ecc2a0f61bf5e494cb4e5e486d61eb01
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Walk_R_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f77f82e99841d584d90857a4426fd6fa
+    m_Address: Assets/Suriyun/Emotions/Emo@Face_EyeClose.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f989de7fd1db6c841b01df9722b583a5
+    m_Address: Assets/Suriyun/Emotions/Emo@Face_SadB.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa666ad69ae216c43a16cc2e3abda821
+    m_Address: Assets/Suriyun/Emotions/Emo@Face_SmileA.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: faa40ee02b9c1fc47a198ad7d939632e
+    m_Address: Assets/Suriyun/Animations/AnimationsWing/Anim@Thinking_wing.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5ef505281f2a5af45a9e43e061ef3a0c, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1ce078f8245ad064889340280bcbab08, type: 2}
+    - {fileID: 11400000, guid: 620e3e4883206bf49a12e54aa6eef071, type: 2}
