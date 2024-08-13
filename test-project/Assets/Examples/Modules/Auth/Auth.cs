@@ -4,7 +4,6 @@ using TMPro;
 using GamePush;
 using System.Collections.Generic;
 using Examples.Console;
-using UnityEditor.PackageManager;
 
 namespace Examples.Auth
 {
