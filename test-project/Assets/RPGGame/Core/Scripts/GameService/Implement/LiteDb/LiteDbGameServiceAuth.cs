@@ -1,4 +1,4 @@
-﻿using UnityEngine.Events;
+using UnityEngine.Events;
 
 public partial class LiteDbGameService
 {
@@ -30,29 +30,37 @@ public partial class LiteDbGameService
             DoRegister(username, password, onFinish);
     }
 
-    protected override void DoGuestLogin(string deviceId, UnityAction<PlayerResult> onFinish)
+  protected override void DoGuestLogin(string deviceId, UnityAction<PlayerResult> onFinish)
+  {
+    var result = new PlayerResult();
+
+    if (gamePush)
     {
-        var result = new PlayerResult();
-        if (string.IsNullOrEmpty(deviceId))
-            result.error = GameServiceErrorCode.EMPTY_USERNAME_OR_PASSWORD;
-        else if (IsPlayerWithUsernameFound(AUTH_GUEST, deviceId))
-        {
-            DbPlayer player = null;
-            if (!TryGetPlayer(AUTH_GUEST, deviceId, deviceId, out player))
-                result.error = GameServiceErrorCode.INVALID_USERNAME_OR_PASSWORD;
-            else
-            {
-                player = UpdatePlayerLoginToken(player);
-                UpdatePlayerStamina(player);
-                result.player = Player.CloneTo(player, new Player());
-            }
-        }
+      Player player = null;
+    }
+    else
+    {
+      if (string.IsNullOrEmpty(deviceId))
+        result.error = GameServiceErrorCode.EMPTY_USERNAME_OR_PASSWORD;
+      else if (IsPlayerWithUsernameFound(AUTH_GUEST, deviceId))
+      {
+        DbPlayer player = null;
+        if (!TryGetPlayer(AUTH_GUEST, deviceId, deviceId, out player))
+          result.error = GameServiceErrorCode.INVALID_USERNAME_OR_PASSWORD;
         else
         {
-            result.player = Player.CloneTo(InsertNewPlayer(AUTH_GUEST, deviceId, deviceId), new Player());
+          player = UpdatePlayerLoginToken(player);
+          UpdatePlayerStamina(player);
+          result.player = Player.CloneTo(player, new Player());
         }
-        onFinish(result);
+      }
+      else
+      {
+        result.player = Player.CloneTo(InsertNewPlayer(AUTH_GUEST, deviceId, deviceId), new Player());
+      }
+      onFinish(result);
     }
+  }
 
     protected override void DoValidateLoginToken(string playerId, string loginToken, bool refreshToken, UnityAction<PlayerResult> onFinish)
     {

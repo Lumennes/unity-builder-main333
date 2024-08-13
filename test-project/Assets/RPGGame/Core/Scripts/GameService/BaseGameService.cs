@@ -1,10 +1,12 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public abstract partial class BaseGameService : MonoBehaviour
 {
+    public bool gamePush;
+
     public const string AUTH_NORMAL = "NORMAL";
     public const string AUTH_GUEST = "GUEST";
     public UnityEvent onServiceStart;
