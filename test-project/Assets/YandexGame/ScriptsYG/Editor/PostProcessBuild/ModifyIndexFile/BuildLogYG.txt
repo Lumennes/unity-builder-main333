@@ -1,2 +1,2 @@
-Build path: C:/xampp/htdocs/WebGL3/PluginYG
-Build number: 1
+Build path: K:/Unity/Projects/unity-builder-main3/test-project/Builds/WebGLAnimeGirls
+Build number: 7
