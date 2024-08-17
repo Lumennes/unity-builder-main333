@@ -1,2 +1,2 @@
-Build path: K:/Unity/Projects/unity-builder-main3/test-project/Builds/WebGLAnimeGirls
-Build number: 7
+Build path: C:/xampp/htdocs/AnimeGirlsWebGL
+Build number: 8
