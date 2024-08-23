@@ -48,6 +48,7 @@ jobs:
           - test-project
         unityVersion:
           - 2022.3.42f1
+          - 2022.3.43f1
           # - 2022.3.13f1
           # - 2023.2.2f1
         targetPlatform:
@@ -199,7 +200,7 @@ jobs:
           
       - uses: Difegue/action-megacmd@master
         with:
-          args: put build /ActionRPG/
+          args: put -c build /ActionRPG/${{ matrix.unityVersion }}/ 
         env:
           USERNAME: ${{ secrets.MEGA_USERNAME }}
           PASSWORD: ${{ secrets.MEGA_PASSWORD }}
