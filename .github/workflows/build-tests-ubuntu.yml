@@ -41,9 +41,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        providerStrategy:
+        #providerStrategy:
           # - local-docker
-          - local
+          #- local
         projectPath:
           - test-project
         unityVersion:
@@ -57,46 +57,46 @@ jobs:
           # - iOS # Build an iOS project.
           #- Android # Build an Android .apk.
           - WebGL # WebGL.
-        buildWithIl2cpp:
-          - false
-          - true
-        additionalParameters:
-          - -param value
-          # - -standaloneBuildSubtarget Server
-        # Skipping configurations that are not supported
-        exclude:
-          # No il2cpp support on Linux Host
-          - targetPlatform: StandaloneOSX
-            buildWithIl2cpp: true
-          - targetPlatform: StandaloneWindows64
-            buildWithIl2cpp: true
-          # Only builds with Il2cpp
-          - targetPlatform: iOS
-            buildWithIl2cpp: false
-          - targetPlatform: Android
-            buildWithIl2cpp: false
-          - targetPlatform: WebGL
-            buildWithIl2cpp: false
-          # No dedicated server support
-          - targetPlatform: WebGL
-            additionalParameters: -standaloneBuildSubtarget Server
-          - targetPlatform: Android
-            additionalParameters: -standaloneBuildSubtarget Server
-          - targetPlatform: iOS
-            additionalParameters: -standaloneBuildSubtarget Server
-          # No dedicated server support on Linux Host
-          - targetPlatform: StandaloneOSX
-            additionalParameters: -standaloneBuildSubtarget Server
-          # No il2cpp dedicated server support on Linux Host
-          - targetPlatform: StandaloneWindows64
-            additionalParameters: -standaloneBuildSubtarget Server
-            buildWithIl2cpp: true
+        # buildWithIl2cpp:
+          # - false
+          # - true
+        # additionalParameters:
+          # - -param value
+          #- -standaloneBuildSubtarget Server
+        #Skipping configurations that are not supported
+        # exclude:
+          #No il2cpp support on Linux Host
+          # - targetPlatform: StandaloneOSX
+            # buildWithIl2cpp: true
+          # - targetPlatform: StandaloneWindows64
+            # buildWithIl2cpp: true
+          #Only builds with Il2cpp
+          # - targetPlatform: iOS
+            # buildWithIl2cpp: false
+          # - targetPlatform: Android
+            # buildWithIl2cpp: false
+          # - targetPlatform: WebGL
+            # buildWithIl2cpp: false
+          #No dedicated server support
+          # - targetPlatform: WebGL
+            # additionalParameters: -standaloneBuildSubtarget Server
+          # - targetPlatform: Android
+            # additionalParameters: -standaloneBuildSubtarget Server
+          # - targetPlatform: iOS
+            # additionalParameters: -standaloneBuildSubtarget Server
+          #No dedicated server support on Linux Host
+          # - targetPlatform: StandaloneOSX
+            # additionalParameters: -standaloneBuildSubtarget Server
+          #No il2cpp dedicated server support on Linux Host
+          # - targetPlatform: StandaloneWindows64
+            # additionalParameters: -standaloneBuildSubtarget Server
+            # buildWithIl2cpp: true
 
     steps:      
 
-      - name: Clear Space for Android Build
-        if: matrix.targetPlatform == 'Android'
-        uses: jlumbroso/free-disk-space@v1.3.1
+      # - name: Clear Space for Android Build
+        # if: matrix.targetPlatform == 'Android'
+        # uses: jlumbroso/free-disk-space@v1.3.1
 
       ###########################
       #         Checkout        #
@@ -119,10 +119,10 @@ jobs:
       ###########################
       #  Set Scripting Backend  #
       ###########################
-      - name: Set Scripting Backend To il2cpp
-        if: matrix.buildWithIl2cpp == true
-        run: |
-          mv -f "./test-project/ProjectSettings/ProjectSettingsIl2cpp.asset" "./test-project/ProjectSettings/ProjectSettings.asset"
+      # - name: Set Scripting Backend To il2cpp
+        # if: matrix.buildWithIl2cpp == true
+        # run: |
+          # mv -f "./test-project/ProjectSettings/ProjectSettingsIl2cpp.asset" "./test-project/ProjectSettings/ProjectSettings.asset"
 
       ###########################
       #          Build          #
@@ -135,12 +135,12 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          buildName: 'GameCI Test Build'
+          buildName: 'ActionRPG'
           projectPath: ${{ matrix.projectPath }}
           unityVersion: ${{ matrix.unityVersion }}
           targetPlatform: ${{ matrix.targetPlatform }}
-          customParameters: -profile SomeProfile -someBoolean -someValue exampleValue ${{ matrix.additionalParameters }}
-          providerStrategy: ${{ matrix.providerStrategy }}
+          # customParameters: -profile SomeProfile -someBoolean -someValue exampleValue ${{ matrix.additionalParameters }}
+          # providerStrategy: ${{ matrix.providerStrategy }}
           allowDirtyBuild: true
 
       - name: Sleep for Retry
@@ -157,12 +157,12 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          buildName: 'GameCI Test Build'
+          buildName: 'ActionRPG'
           projectPath: ${{ matrix.projectPath }}
           unityVersion: ${{ matrix.unityVersion }}
           targetPlatform: ${{ matrix.targetPlatform }}
-          customParameters: -profile SomeProfile -someBoolean -someValue exampleValue ${{ matrix.additionalParameters }}
-          providerStrategy: ${{ matrix.providerStrategy }}
+          # customParameters: -profile SomeProfile -someBoolean -someValue exampleValue ${{ matrix.additionalParameters }}
+          # providerStrategy: ${{ matrix.providerStrategy }}
           allowDirtyBuild: true
 
       - name: Sleep for Retry
@@ -178,13 +178,13 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          buildName: 'GameCI Test Build'
+          buildName: 'ActionRPG'
           projectPath: ${{ matrix.projectPath }}
           unityVersion: ${{ matrix.unityVersion }}
           targetPlatform: ${{ matrix.targetPlatform }}
-          customParameters: -profile SomeProfile -someBoolean -someValue exampleValue ${{ matrix.additionalParameters }}
-          providerStrategy: ${{ matrix.providerStrategy }}
-          allowDirtyBuild: true
+          # customParameters: -profile SomeProfile -someBoolean -someValue exampleValue ${{ matrix.additionalParameters }}
+          # providerStrategy: ${{ matrix.providerStrategy }}
+          # allowDirtyBuild: true
 
       ###########################
       #          Upload         #
@@ -199,7 +199,7 @@ jobs:
           
       - uses: Difegue/action-megacmd@master
         with:
-          args: put build /Build/
+          args: put build /ActionRPG/
         env:
           USERNAME: ${{ secrets.MEGA_USERNAME }}
           PASSWORD: ${{ secrets.MEGA_PASSWORD }}
