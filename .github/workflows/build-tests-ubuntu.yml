@@ -201,7 +201,7 @@ jobs:
           
       - uses: Difegue/action-megacmd@master
         with:
-          args: put -c build /${{ env.PROJECT_NAME }}/${{ github.event.number }}/${{ matrix.unityVersion }}/ 
+          args: put -c build /${{ env.PROJECT_NAME }}/${{ matrix.unityVersion }}/ 
         env:
           USERNAME: ${{ secrets.MEGA_USERNAME }}
           PASSWORD: ${{ secrets.MEGA_PASSWORD }}
